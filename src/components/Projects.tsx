@@ -143,11 +143,18 @@ const Projects: React.FC = () => {
                     Live Demo
                   </a>
                   <a
-                    href={project.githubUrl}
-                    className="flex items-center text-gray-600 hover:text-gray-800 transition-colors duration-200"
+                    href="#contact"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const element = document.getElementById('contact');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                    className="flex items-center text-gray-600 hover:text-gray-800 transition-colors duration-200 cursor-pointer"
                   >
                     <Github className="w-4 h-4 mr-1" />
-                    Code
+                    Contact Me
                   </a>
                 </div>
               </div>

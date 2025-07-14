@@ -70,16 +70,16 @@ const Hero: React.FC = () => {
             
             {/* Social Icons */}
             <div className="flex space-x-6">
-              <a href="#" className="text-white hover:text-yellow-400 transition-colors duration-300 transform hover:scale-110">
+              <a href="https://github.com/webkamal" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-400 transition-colors duration-300 transform hover:scale-110">
                 <Github className="w-6 h-6" />
               </a>
-              <a href="#" className="text-white hover:text-yellow-400 transition-colors duration-300 transform hover:scale-110">
+              <a href="https://www.linkedin.com/in/khanalkamal/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-400 transition-colors duration-300 transform hover:scale-110">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="mailto:kamal@example.com" className="text-white hover:text-yellow-400 transition-colors duration-300 transform hover:scale-110">
+              <a href="mailto:hello@kamalkhanal.com" className="text-white hover:text-yellow-400 transition-colors duration-300 transform hover:scale-110">
                 <Mail className="w-6 h-6" />
               </a>
-              <a href="tel:+61234567890" className="text-white hover:text-yellow-400 transition-colors duration-300 transform hover:scale-110">
+              <a href="tel:0415837036" className="text-white hover:text-yellow-400 transition-colors duration-300 transform hover:scale-110">
                 <Phone className="w-6 h-6" />
               </a>
             </div>
