@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
+import Projects from './components/Projects';
 import { 
   Database, 
   Globe, 
@@ -13,7 +14,6 @@ import {
   Award, 
   TrendingUp, 
   CheckCircle, 
-  ExternalLink, 
   Github, 
   Mail, 
   Phone, 
@@ -30,32 +30,6 @@ const App: React.FC = () => {
     }
   };
 
-  const projects = [
-    {
-      title: 'E-commerce Platform',
-      description: 'Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      liveUrl: '#',
-      githubUrl: '#'
-    },
-    {
-      title: 'SEO Analytics Dashboard',
-      description: 'Comprehensive SEO tracking and analytics platform with real-time keyword monitoring, competitor analysis, and performance insights.',
-      image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Vue.js', 'Python', 'PostgreSQL', 'Chart.js'],
-      liveUrl: '#',
-      githubUrl: '#'
-    },
-    {
-      title: 'Mobile Banking App',
-      description: 'Secure mobile banking application with biometric authentication, real-time transactions, and comprehensive financial management tools.',
-      image: 'https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React Native', 'Firebase', 'Redux', 'Biometrics'],
-      liveUrl: '#',
-      githubUrl: '#'
-    }
-  ];
 
   const achievements = [
     { icon: Users, number: '50+', label: 'Happy Clients' },
@@ -76,59 +50,7 @@ const App: React.FC = () => {
 
       <Experience />
 
-      {/* Projects Section */}
-      <section id="projects" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Here are some of my recent projects that showcase my skills and expertise
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover-lift animate-fadeInUp" style={{ animationDelay: `${index * 0.2}s` }}>
-                <div className="relative overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-48 object-cover transform hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">{project.title}</h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech, techIndex) => (
-                      <span key={techIndex} className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="flex space-x-4">
-                    <a
-                      href={project.liveUrl}
-                      className="flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200"
-                    >
-                      <ExternalLink className="w-4 h-4 mr-1" />
-                      Live Demo
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      className="flex items-center text-gray-600 hover:text-gray-800 transition-colors duration-200"
-                    >
-                      <Github className="w-4 h-4 mr-1" />
-                      Code
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Projects />
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-gray-50">

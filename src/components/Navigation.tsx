@@ -39,6 +39,12 @@ const Navigation: React.FC = () => {
                 Skills
               </button>
               <button
+                onClick={() => scrollToSection('experience')}
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+              >
+                Experience
+              </button>
+              <button
                 onClick={() => scrollToSection('projects')}
                 className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
               >
@@ -112,8 +118,9 @@ const Navigation: React.FC = () => {
               {[
                 { icon: User, label: 'About', section: 'about', delay: '0.1s' },
                 { icon: Code, label: 'Skills', section: 'skills', delay: '0.2s' },
-                { icon: Briefcase, label: 'Projects', section: 'projects', delay: '0.3s' },
-                { icon: Mail, label: 'Contact', section: 'contact', delay: '0.4s' }
+                { icon: Briefcase, label: 'Experience', section: 'experience', delay: '0.3s' },
+                { icon: Briefcase, label: 'Projects', section: 'projects', delay: '0.4s' },
+                { icon: Mail, label: 'Contact', section: 'contact', delay: '0.5s' }
               ].map(({ icon: Icon, label, section, delay }) => (
                 <button
                   key={section}
@@ -131,13 +138,13 @@ const Navigation: React.FC = () => {
             <button
               onClick={() => scrollToSection('contact')}
               className="mt-8 px-8 py-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white rounded-2xl font-semibold text-lg shadow-2xl hover:shadow-blue-500/25 transform hover:scale-105 transition-all duration-300 animate-fadeInUp backdrop-blur-sm border border-white/20"
-              style={{ animationDelay: '0.5s' }}
+              style={{ animationDelay: '0.6s' }}
             >
               Get In Touch
             </button>
 
             {/* Social Links */}
-            <div className="mt-8 flex space-x-4 animate-fadeInUp" style={{ animationDelay: '0.6s' }}>
+            <div className="mt-8 flex space-x-4 animate-fadeInUp" style={{ animationDelay: '0.7s' }}>
               {/* Add your social media icons here if needed */}
             </div>
           </div>
