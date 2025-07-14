@@ -87,6 +87,14 @@ const App: React.FC = () => {
                 </li>
                 <li>
                   <button
+                    onClick={() => scrollToSection('experience')}
+                    className="text-gray-400 hover:text-white transition-colors duration-200"
+                  >
+                    Experience
+                  </button>
+                </li>
+                <li>
+                  <button
                     onClick={() => scrollToSection('projects')}
                     className="text-gray-400 hover:text-white transition-colors duration-200"
                   >

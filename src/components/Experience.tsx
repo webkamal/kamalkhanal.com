@@ -66,7 +66,7 @@ const Experience: React.FC = () => {
       title: 'Founder & Web Consultant',
       company: 'WebQuick',
       location: 'Sydney, Australia',
-      period: '2012 - Present',
+      period: 'Mar 2025 - Present',
       status: 'Founder',
       type: 'Self-employed',
       description: 'Founded and led a web development consultancy (webquick.com.au) specializing in small business solutions',

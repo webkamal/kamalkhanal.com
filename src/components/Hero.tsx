@@ -59,8 +59,8 @@ const Hero: React.FC = () => {
                 <span>View My Work</span>
               </button>
               <a
-                href="/kamal_khanal_cv copy.pdf"
-                download="Kamal_Khanal_CV.pdf"
+                href="/KamalKhanal_CV.pdf"
+                download="KamalKhanal_CV.pdf"
                 className="group border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-purple-700 transition-all duration-300 flex items-center justify-center space-x-2"
               >
                 <Download className="w-5 h-5" />
