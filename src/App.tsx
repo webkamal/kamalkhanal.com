@@ -1,15 +1,22 @@
-import { useEffect } from "react";
+import React from 'react';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
-function App() {
-  useEffect(() => {
-    console.log("✅ App component mounted");
-  }, []);
-
+const App: React.FC = () => {
   return (
-    <div style={{ fontSize: "32px", color: "black", padding: "2rem" }}>
-      ✅ Hello Kamal Khanal — Your App Works!
+    <div className="min-h-screen">
+      <Header />
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
