@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from './components/Navigation';
+import Hero from './components/Hero';
 import { 
   Code, 
   Database, 
@@ -16,8 +17,6 @@ import {
   Phone, 
   MapPin, 
   Linkedin, 
-  Download,
-  Eye
 } from 'lucide-react';
 
 const App: React.FC = () => {
@@ -75,46 +74,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-white">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50 overflow-hidden">
-        {/* Background decorative elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"></div>
-          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute top-40 left-1/2 w-60 h-60 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" style={{ animationDelay: '4s' }}></div>
-        </div>
-
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="animate-fadeInUp">
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
-              Hi, I'm{' '}
-              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-                Kamal Khanal
-              </span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Web Developer & SEO Specialist crafting beautiful, high-performing websites that drive results
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button
-                onClick={() => scrollToSection('projects')}
-                className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center space-x-2"
-              >
-                <Eye className="w-5 h-5" />
-                <span>View My Work</span>
-              </button>
-              <a
-                href="/kamal_khanal_cv copy.pdf"
-                download="Kamal_Khanal_CV.pdf"
-                className="group border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full font-semibold text-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300 flex items-center space-x-2"
-              >
-                <Download className="w-5 h-5" />
-                <span>Download CV</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       {/* About Section */}
       <section id="about" className="py-20 bg-white">
