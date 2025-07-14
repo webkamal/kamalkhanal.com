@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Linkedin, CheckCircle, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, CheckCircle, Send, Download, Briefcase, Users, Code, MessageSquare } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = React.useState(false);
@@ -86,6 +86,57 @@ const Contact: React.FC = () => {
                   </a>
                 </div>
               </div>
+            </div>
+            
+            {/* Availability Section */}
+            <div className="mt-8 p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100">
+              <h4 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                <Briefcase className="w-5 h-5 text-blue-600 mr-2" />
+                Available For:
+              </h4>
+              <div className="space-y-3">
+                <div className="flex items-center text-gray-700">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
+                  <Users className="w-4 h-4 text-blue-600 mr-2" />
+                  <span>Full-time/part-time positions</span>
+                </div>
+                <div className="flex items-center text-gray-700">
+                  <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                  <MessageSquare className="w-4 h-4 text-green-600 mr-2" />
+                  <span>Contract work</span>
+                </div>
+                <div className="flex items-center text-gray-700">
+                  <div className="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
+                  <Code className="w-4 h-4 text-purple-600 mr-2" />
+                  <span>Freelance projects</span>
+                </div>
+                <div className="flex items-center text-gray-700">
+                  <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                  <MessageSquare className="w-4 h-4 text-orange-600 mr-2" />
+                  <span>Consultation services</span>
+                </div>
+              </div>
+            </div>
+            
+            {/* Download CV Button */}
+            <div className="mt-6">
+              <a
+                href="/KamalKhanal_CV.pdf"
+                download="KamalKhanal_CV.pdf"
+                className="inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group"
+              >
+                <Download className="w-5 h-5 mr-2 group-hover:animate-bounce" />
+                Download CV
+              </a>
+            </div>
+            
+            {/* Additional Message */}
+            <div className="mt-6 p-4 bg-gray-50 rounded-lg border-l-4 border-blue-500">
+              <p className="text-gray-600 text-sm leading-relaxed">
+                I'm actively seeking new opportunities in Sydney, Australia. Whether you're 
+                looking for a full-time or part-time developer, need contract work, or want to discuss a 
+                freelance project, I'd love to hear from you.
+              </p>
             </div>
           </div>
           
