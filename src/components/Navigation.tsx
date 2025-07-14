@@ -15,9 +15,9 @@ const Navigation: React.FC = () => {
   return (
     <>
       {/* Desktop Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 safe-area-inset">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex justify-between items-center h-16 pt-safe">
             {/* Logo */}
             <div className="flex items-center">
               <Code className="h-8 w-8 text-blue-600 mr-2" />
@@ -59,10 +59,10 @@ const Navigation: React.FC = () => {
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden">
+            <div className="md:hidden flex items-center">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="relative p-2 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 backdrop-blur-sm border border-white/20"
+                className="relative p-3 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 backdrop-blur-sm border border-white/20 mr-2"
               >
                 {isMobileMenuOpen ? (
                   <X className="h-6 w-6" />

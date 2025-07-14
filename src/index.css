@@ -5,6 +5,17 @@
 /* Smooth scrolling for the entire page */
 html {
   scroll-behavior: smooth;
+  /* Support for safe area insets on mobile devices */
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+/* Safe area support for mobile devices */
+.safe-area-inset {
+  padding-top: env(safe-area-inset-top);
+}
+
+.pt-safe {
+  padding-top: max(0.5rem, env(safe-area-inset-top));
 }
 
 /* Custom animations */
@@ -143,6 +154,16 @@ html {
 
 .animate-rotate {
   animation: rotate 20s linear infinite;
+}
+
+/* Scale X animation for progress bars */
+@keyframes scaleX {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 /* New animations for hero section */

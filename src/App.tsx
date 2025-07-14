@@ -1,8 +1,10 @@
 import React from 'react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
+import Experience from './components/Experience';
 import { 
-  Code, 
   Database, 
   Globe, 
   Search, 
@@ -15,8 +17,9 @@ import {
   Github, 
   Mail, 
   Phone, 
-  MapPin, 
-  Linkedin, 
+  MapPin,
+  Linkedin,
+  Code
 } from 'lucide-react';
 
 const App: React.FC = () => {
@@ -26,15 +29,6 @@ const App: React.FC = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
-  const skills = [
-    { name: 'React', level: 95, icon: Code },
-    { name: 'TypeScript', level: 90, icon: Code },
-    { name: 'Node.js', level: 85, icon: Database },
-    { name: 'SEO', level: 95, icon: Search },
-    { name: 'WordPress', level: 90, icon: Globe },
-    { name: 'Mobile Development', level: 80, icon: Smartphone }
-  ];
 
   const projects = [
     {
@@ -76,71 +70,11 @@ const App: React.FC = () => {
       
       <Hero />
 
-      {/* About Section */}
-      <section id="about" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fadeInLeft">
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">About Me</h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                I'm a passionate web developer and SEO specialist based in Sydney, Australia, with over 5 years of experience creating digital solutions that make a difference. I specialize in building modern, responsive websites and implementing SEO strategies that drive organic growth.
-              </p>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                My expertise spans across front-end development, back-end systems, and search engine optimization. I believe in creating not just beautiful websites, but ones that perform exceptionally well in search rankings and provide outstanding user experiences.
-              </p>
-              <div className="grid grid-cols-2 gap-6">
-                {achievements.map((achievement, index) => (
-                  <div key={index} className="text-center p-4 rounded-lg bg-gray-50 hover-lift">
-                    <achievement.icon className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-                    <div className="text-2xl font-bold text-gray-900">{achievement.number}</div>
-                    <div className="text-sm text-gray-600">{achievement.label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="animate-fadeInRight">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 rounded-2xl transform rotate-6"></div>
-                <img
-                  src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800"
-                  alt="Kamal Khanal"
-                  className="relative rounded-2xl shadow-xl w-full h-96 object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <About />
 
-      {/* Skills Section */}
-      <section id="skills" className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Skills & Expertise</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              I combine technical expertise with creative problem-solving to deliver exceptional results
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {skills.map((skill, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-lg hover-lift animate-fadeInUp" style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className="flex items-center mb-4">
-                  <skill.icon className="w-8 h-8 text-blue-600 mr-3" />
-                  <h3 className="text-xl font-semibold text-gray-900">{skill.name}</h3>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-3 mb-2">
-                  <div 
-                    className="bg-gradient-to-r from-blue-600 to-purple-600 h-3 rounded-full progress-bar"
-                    style={{ width: `${skill.level}%` }}
-                  ></div>
-                </div>
-                <div className="text-right text-sm text-gray-600">{skill.level}%</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Skills />
+
+      <Experience />
 
       {/* Projects Section */}
       <section id="projects" className="py-20 bg-white">
