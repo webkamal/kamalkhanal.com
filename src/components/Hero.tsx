@@ -58,8 +58,8 @@ const Hero: React.FC = () => {
                 <span>View My Work</span>
               </button>
               <a
-                href="/Kamal_Khanal_CV.pdf"
-                download="Kamal_Khanal_CV.pdf"
+                href="/kamalkhanal-cv.pdf"
+                download="kamalkhanal-cv.pdf"
                 className="group border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-purple-700 transition-all duration-300 flex items-center justify-center space-x-2"
               >
                 <Download className="w-5 h-5" />
@@ -75,7 +75,7 @@ const Hero: React.FC = () => {
               <a href="https://www.linkedin.com/in/khanalkamal/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-400 transition-colors duration-300 transform hover:scale-110">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="mailto:hello@kamalkhanal.com" className="text-white hover:text-yellow-400 transition-colors duration-300 transform hover:scale-110">
+              <a href="mailto:kamalkhanal@gmail.com" className="text-white hover:text-yellow-400 transition-colors duration-300 transform hover:scale-110">
                 <Mail className="w-6 h-6" />
               </a>
               <a href="tel:0415837036" className="text-white hover:text-yellow-400 transition-colors duration-300 transform hover:scale-110">

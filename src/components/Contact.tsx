@@ -56,8 +56,8 @@ const Contact: React.FC = () => {
                 <Mail className="w-6 h-6 text-blue-600 mr-4" />
                 <div>
                   <div className="font-medium text-gray-900">Email</div>
-                  <a href="mailto:hello@kamalkhanal.com" className="text-gray-600 hover:text-blue-600 transition-colors duration-200">
-                    hello@kamalkhanal.com
+                  <a href="mailto:kamalkhanal@gmail.com" className="text-gray-600 hover:text-blue-600 transition-colors duration-200">
+                    kamalkhanal@gmail.com
                   </a>
                 </div>
               </div>
@@ -121,8 +121,10 @@ const Contact: React.FC = () => {
             {/* Download CV Button */}
             <div className="mt-6">
               <a
-                href="/Kamal_Khanal_CV.pdf"
-                download="Kamal_Khanal_CV.pdf"
+                href="/Kamal_Khanal_CV.docx"
+                download="Kamal_Khanal_CV.docx"
+                href="/kamalkhanal-cv.pdf"
+                download="kamalkhanal-cv.pdf"
                 className="inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group"
               >
                 <Download className="w-5 h-5 mr-2 group-hover:animate-bounce" />
@@ -163,7 +165,7 @@ const Contact: React.FC = () => {
                   </p>
                   <div className="flex items-center justify-center space-x-2 text-green-600 animate-fadeInUp" style={{ animationDelay: '0.6s' }}>
                     <Mail className="w-4 h-4" />
-                    <span className="text-sm font-medium">Sent to hello@kamalkhanal.com</span>
+                    <span className="text-sm font-medium">Sent to kamalkhanal@gmail.com</span>
                   </div>
                 </div>
               </div>

@@ -55,8 +55,8 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-blue-300" />
-                <a href="mailto:hello@kamalkhanal.com" className="text-blue-100 hover:text-white transition-colors duration-200">
-                  hello@kamalkhanal.com
+                <a href="mailto:kamalkhanal@gmail.com" className="text-blue-100 hover:text-white transition-colors duration-200">
+                  kamalkhanal@gmail.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
@@ -133,7 +133,7 @@ const Footer: React.FC = () => {
                   <Linkedin className="w-6 h-6 text-white group-hover:text-blue-200" />
                 </a>
                 <a 
-                  href="mailto:hello@kamalkhanal.com" 
+                  href="mailto:kamalkhanal@gmail.com" 
                   className="group p-3 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover:bg-white/20 hover:scale-110 transition-all duration-300"
                 >
                   <Mail className="w-6 h-6 text-white group-hover:text-blue-200" />
