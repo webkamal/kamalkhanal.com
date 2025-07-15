@@ -7,12 +7,12 @@ const Experience: React.FC = () => {
       title: 'Founder / Web Developer & Digital Strategist',
       company: 'WebQuick',
       location: 'Sydney, Australia',
-      period: 'Mar 2025 - Present',
+      period: 'Mar 2024 - Present',
       status: 'Founder',
       type: 'Self-employed',
-      description: 'A web agency I built to deliver high-performance, SEO-optimized websites to small Australian businesses. At WebQuick, I led both the technical development and strategic planning for 5+ projects, combining clean code with real marketing outcomes.',
+      description: 'A web agency I built to deliver high-performance, SEO-optimized websites to small Australian businesses. At WebQuick, I led both the technical development and strategic planning for 10+ projects, combining clean code with real marketing outcomes.',
       achievements: [
-        'Successfully launched 5+ client websites with modern design and SEO optimization',
+        'Successfully launched 10+ client websites with modern design and SEO optimization',
         'Established complete business infrastructure including hosting, domain management, and client onboarding processes'
       ],
       skills: ['React', 'NextJS', 'SEO', 'Digital Strategy', 'Vercel'],
