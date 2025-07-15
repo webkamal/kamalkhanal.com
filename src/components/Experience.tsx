@@ -4,24 +4,22 @@ import { Calendar, MapPin, ExternalLink, Briefcase, Award, TrendingUp, Users, Co
 const Experience: React.FC = () => {
   const experiences = [
     {
-      title: 'Freelance Web Developer / SEO Consultant',
-      company: 'SiteGuru',
-      location: 'Remote',
-      period: 'Jan 2023 - Present',
-      status: 'Current',
-      type: 'Full-time',
-      description: 'Leading web development and digital marketing projects remotely',
+      title: 'Founder / Web Developer & Digital Strategist',
+      company: 'WebQuick',
+      location: 'Sydney, Australia',
+      period: 'Mar 2025 - Present',
+      status: 'Founder',
+      type: 'Self-employed',
+      description: 'A web agency I built to deliver high-performance, SEO-optimized websites to small Australian businesses. At WebQuick, I led both the technical development and strategic planning for 5+ projects, combining clean code with real marketing outcomes.',
       achievements: [
-        'Built and managed 20+ websites using WordPress, Elementor, and WooCommerce',
-        'Created and maintained Google PPC campaigns for local businesses',
-        'Improved organic search rankings through on-page SEO, content optimization, and schema',
-        'Projects: cheapestiles.com.au, bellaskinclinic.com.au, kamal.cc'
+        'Successfully launched 5+ client websites with modern design and SEO optimization',
+        'Established complete business infrastructure including hosting, domain management, and client onboarding processes'
       ],
-      skills: ['WordPress', 'Elementor', 'WooCommerce', 'SEO', 'Google Ads', 'PPC'],
-      icon: Code2,
-      color: 'from-blue-500 to-purple-600',
-      bgColor: 'bg-blue-50',
-      borderColor: 'border-blue-200'
+      skills: ['React', 'NextJS', 'SEO', 'Digital Strategy', 'Vercel'],
+      icon: Award,
+      color: 'from-purple-500 to-pink-600',
+      bgColor: 'bg-purple-50',
+      borderColor: 'border-purple-200'
     },
     {
       title: 'Web Developer / SEO Specialist',
@@ -35,17 +33,38 @@ const Experience: React.FC = () => {
         'Rebuilt and optimized the company\'s e-commerce website using WordPress & WooCommerce',
         'Managed Google Ads campaigns, tracked conversions, and reduced CPC',
         'Improved local SEO, implemented structured data, and boosted Google rankings',
-        'Collaborated with internal teams to enhance UX, mobile responsiveness, and speed'
+        'Collaborated with internal teams to enhance UX, mobile responsiveness, and speed',
+        'Projects: cheapestiles.com.au, gettilesonline.com.au, showtile.com.au'
       ],
-      skills: ['WordPress', 'WooCommerce', 'Google Ads', 'Local SEO', 'UX Design'],
+      skills: ['WooCommerce', 'Google Ads', 'Local SEO', 'Google Analytics', 'SEMRush'],
       icon: Globe,
       color: 'from-green-500 to-teal-600',
       bgColor: 'bg-green-50',
       borderColor: 'border-green-200'
     },
     {
-      title: 'Web Developer / SEO Specialist',
-      company: 'All in IT Solutions / Skaff Legal',
+      title: 'Freelance Web Developer / SEO Consultant',
+      company: 'SiteGuru',
+      location: 'Remote',
+      period: '2019 - 2023',
+      status: 'Freelance',
+      type: 'Freelance',
+      description: 'Leading web development and digital marketing projects remotely',
+      achievements: [
+        'Built and managed 20+ websites using WordPress, Elementor, and WooCommerce',
+        'Created and maintained Google PPC campaigns for local businesses',
+        'Improved organic search rankings through on-page SEO, content optimization, and schema',
+        'Projects: bellaskinclinic.com.au, mintfencing.com.au, quickcleaners.com.au, skafflegal.com, et cetera'
+      ],
+      skills: ['WordPress', 'Elementor', 'WooCommerce', 'SEO', 'Google Ads', 'PPC'],
+      icon: Code2,
+      color: 'from-blue-500 to-purple-600',
+      bgColor: 'bg-blue-50',
+      borderColor: 'border-blue-200'
+    },
+    {
+      title: 'Web Developer',
+      company: 'All in IT Solutions',
       location: 'Sydney, Australia',
       period: '2015 - 2018',
       status: 'Full-time',
@@ -56,31 +75,11 @@ const Experience: React.FC = () => {
         'Led redesigns, WordPress migrations, site speed improvements, and SEO audits',
         'Ran Google Ads and performed lead generation for small businesses'
       ],
-      skills: ['WordPress', 'SEO Audits', 'Google Ads', 'Lead Generation', 'Site Migration'],
+      skills: ['WordPress', 'WP Bakery', 'Opencart', 'Gravity Forms', 'Lead Generation', 'Site Migration', 'AWS'],
       icon: TrendingUp,
       color: 'from-orange-500 to-red-600',
       bgColor: 'bg-orange-50',
       borderColor: 'border-orange-200'
-    },
-    {
-      title: 'Founder & Web Consultant',
-      company: 'WebQuick',
-      location: 'Sydney, Australia',
-      period: 'Mar 2025 - Present',
-      status: 'Founder',
-      type: 'Self-employed',
-      description: 'Founded and led a web development consultancy (webquick.com.au) specializing in small business solutions',
-      achievements: [
-        'Built and maintained client websites, handling end-to-end project delivery',
-        'Conducted full SEO audits, keyword targeting, and improved Google rankings',
-        'Managed web hosting setups, email configurations, and PPC campaigns',
-        'Provided digital growth strategies using WordPress, Elementor, and custom code'
-      ],
-      skills: ['SEO', 'Digital Strategy'],
-      icon: Award,
-      color: 'from-purple-500 to-pink-600',
-      bgColor: 'bg-purple-50',
-      borderColor: 'border-purple-200'
     }
   ];
 

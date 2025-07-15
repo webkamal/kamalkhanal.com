@@ -41,12 +41,11 @@ const Hero: React.FC = () => {
             </h1>
             
             <h2 className="text-2xl md:text-3xl text-purple-200 mb-6 font-light">
-              Web Developer | SEO Specialist
+              Digital Strategist | Web Consultant
             </h2>
             
             <p className="text-lg md:text-xl text-purple-100 mb-8 max-w-2xl leading-relaxed">
-              React & WordPress Expert based in Sydney, Australia. I create exceptional 
-              web experiences that drive results and help businesses grow online.
+              I design and build SEO-focused websites that help small businesses grow online through better visibility and smarter digital strategies.
             </p>
             
             {/* Buttons */}
