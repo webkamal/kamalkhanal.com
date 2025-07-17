@@ -41,11 +41,11 @@ const Hero: React.FC = () => {
             </h1>
             
             <h2 className="text-2xl md:text-3xl text-purple-200 mb-6 font-light">
-              Digital Strategist | Web Consultant
+              Frontend Engineer – React / Next.js
             </h2>
             
             <p className="text-lg md:text-xl text-purple-100 mb-8 max-w-2xl leading-relaxed">
-              I design and build SEO-focused websites that help small businesses grow online through better visibility and smarter digital strategies.
+              Frontend-focused engineer building high-performance, user-centric web applications using React, Next.js, and Tailwind CSS.
             </p>
             
             {/* Buttons */}

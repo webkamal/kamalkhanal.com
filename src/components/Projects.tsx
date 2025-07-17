@@ -4,99 +4,51 @@ import { ExternalLink, Github } from 'lucide-react';
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: 'Kamal.cc - SaaS SEO Blog Generator',
-      description: 'Modern SaaS platform for automated SEO blog generation built with React.js. Features advanced content optimization, keyword targeting, and automated publishing workflows.',
+      title: 'Kamal AI - AI Blog Generator',
+      description: 'AI-powered blog article generator built with React.js and Supabase. Integrated OpenAI APIs and real-time DB sync with minimal UI design using Tailwind CSS.',
+      image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['React.js', 'Supabase', 'OpenAI API', 'Tailwind CSS', 'Real-time DB'],
+      liveUrl: 'https://kamalkhanal.com',
+      githubUrl: '#'
+    },
+    {
+      title: 'Link Vault - Tab Manager',
+      description: 'Hacker News-style tab manager built with Next.js and Supabase. Features authentication, voting, and real-time updates with plans to integrate Chrome Extension.',
       image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React.js', 'SaaS', 'SEO', 'Blog Generator'],
-      liveUrl: 'https://kamal.cc',
+      technologies: ['Next.js', 'Supabase', 'Authentication', 'Real-time Updates', 'Chrome Extension'],
+      liveUrl: 'https://link-vault-alpha.lovable.app',
       githubUrl: '#'
     },
     {
-      title: 'SiteGuru - WordPress to NextJS Migration',
-      description: 'Complete platform migration from WordPress to React, then to NextJS. Improved performance, SEO capabilities, and modern development workflow for enhanced user experience.',
+      title: 'Portfolio Website',
+      description: 'Custom-built portfolio using React.js + Bolt.new. Showcases personal projects, skills, and resume. Deployed on Netlify with custom domain and performance optimizations.',
       image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['NextJS', 'React', 'WordPress Migration', 'Performance'],
-      liveUrl: 'https://siteguru.com.au',
+      technologies: ['React.js', 'Bolt.new', 'Netlify', 'Performance Optimization', 'Custom Domain'],
+      liveUrl: 'https://kamalkhanal.com',
       githubUrl: '#'
     },
     {
-      title: 'WebQuick - Web Development Platform',
-      description: 'Founded and developed a comprehensive web development platform using WordPress and WHMCS. Provides end-to-end web solutions for businesses across Australia.',
+      title: 'WebQuick - SaaS Website Builder',
+      description: 'SaaS website builder for tradespeople built with Next.js 15, Tailwind, and Stripe. Features onboarding automation and responsive UI components.',
       image: 'https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['WordPress', 'WHMCS', 'Platform Development', 'Business Solutions'],
+      technologies: ['Next.js 15', 'Tailwind CSS', 'Stripe', 'SaaS', 'Automation'],
       liveUrl: 'https://webquick.com.au',
       githubUrl: '#'
     },
     {
-      title: 'Cheapest Tiles - WooCommerce Optimization',
-      description: 'Complete rebuild and optimization of WooCommerce e-commerce site. Enhanced product pages, improved conversion rates, and optimized for better search engine rankings.',
+      title: 'Show Tile - React Frontend Rebuild',
+      description: 'Rebuilt WooCommerce frontend using React.js + WordPress REST API. Boosted Core Web Vitals scores and automated inventory syncing with improved SEO.',
       image: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['WooCommerce', 'WordPress', 'E-commerce', 'SEO Optimization'],
-      liveUrl: 'https://cheapestiles.com.au',
-      githubUrl: '#'
-    },
-    {
-      title: 'Bella Skin Clinic - Beauty Business Site',
-      description: 'Professional beauty clinic website built in WordPress with custom design, appointment booking system, and optimized for local SEO to attract more clients.',
-      image: 'https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['WordPress', 'Beauty Industry', 'Local SEO', 'Booking System'],
-      liveUrl: 'https://bellaskinclinic.com.au',
-      githubUrl: '#'
-    },
-    {
-      title: 'Skaff Legal - WordPress to React Migration',
-      description: 'Migrated legal firm website from WordPress to React, achieving 50% speed improvement. Enhanced user experience with modern design and faster loading times.',
-      image: 'https://images.pexels.com/photos/5668772/pexels-photo-5668772.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'WordPress Migration', 'Performance', 'Legal Industry'],
-      liveUrl: 'https://skafflegal.com',
-      githubUrl: '#'
-    },
-    {
-      title: 'Quick Cleaners - Service Business Site',
-      description: 'Professional cleaning business website built in WordPress with service booking, customer testimonials, and local SEO optimization for Sydney market.',
-      image: 'https://images.pexels.com/photos/4099468/pexels-photo-4099468.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['WordPress', 'Service Business', 'Local SEO', 'Booking System'],
-      liveUrl: 'https://quickcleaners.com.au',
-      githubUrl: '#'
-    },
-    {
-      title: 'Sydney Structural Steel - Joomla Migration',
-      description: 'Successfully migrated construction company website from Joomla to WordPress, improving content management and SEO performance for better online visibility.',
-      image: 'https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['WordPress', 'Joomla Migration', 'Construction', 'CMS'],
-      liveUrl: 'https://sydneystructuralsteel.com.au',
-      githubUrl: '#'
-    },
-    {
-      title: 'Get Tiles Online - SEO Performance',
-      description: 'Comprehensive SEO and performance optimization for tile retailer. Improved page load speeds, search rankings, and overall user experience.',
-      image: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['SEO Optimization', 'Performance', 'E-commerce', 'WordPress'],
-      liveUrl: 'https://gettilesonline.com.au',
-      githubUrl: '#'
-    },
-    {
-      title: 'Andes MS - Security & Recovery',
-      description: 'Restored and updated hacked website, implemented security measures, and successfully got the site approved by Google after malware removal and optimization.',
-      image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Security', 'Malware Removal', 'WordPress', 'Google Approval'],
-      liveUrl: 'https://andesms.com.au',
-      githubUrl: '#'
-    },
-    {
-      title: 'Show Tile - Category Page SEO',
-      description: 'Specialized SEO optimization for e-commerce category pages, improving search visibility and organic traffic for tile retail business.',
-      image: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['SEO', 'Category Optimization', 'E-commerce', 'Organic Traffic'],
+      technologies: ['React.js', 'WordPress REST API', 'WooCommerce', 'Core Web Vitals', 'SEO'],
       liveUrl: 'https://showtile.com.au',
       githubUrl: '#'
     },
     {
-      title: 'Mint Fencing - Top 3 Google Rankings',
-      description: 'Service page SEO optimization that achieved top 3 Google rankings for major keywords in the fencing industry, significantly increasing lead generation.',
-      image: 'https://images.pexels.com/photos/280232/pexels-photo-280232.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['SEO', 'Keyword Ranking', 'Service Pages', 'Lead Generation'],
-      liveUrl: 'https://mintfencing.com.au',
+      title: 'SiteGuru - WordPress Platform',
+      description: 'Built and managed 20+ WordPress websites with Elementor and WooCommerce. Implemented SEO strategies and tracked campaigns via GA4 + Tag Manager.',
+      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['WordPress', 'Elementor', 'WooCommerce', 'GA4', 'Tag Manager'],
+      liveUrl: 'https://siteguru.com.au',
       githubUrl: '#'
     }
   ];
@@ -107,7 +59,7 @@ const Projects: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Here are some of my recent projects that showcase my skills and expertise
+            Recent projects showcasing my frontend engineering and full-stack development skills
           </p>
         </div>
         

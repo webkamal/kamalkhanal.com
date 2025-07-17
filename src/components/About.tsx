@@ -15,12 +15,20 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fadeInLeft">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">About Me</h2>
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              I'm a passionate web developer and SEO specialist based in Sydney, Australia, with over 5 years of experience creating digital solutions that make a difference. I specialize in building modern, responsive websites and implementing SEO strategies that drive organic growth.
-            </p>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              My expertise spans across front-end development, back-end systems, and search engine optimization. I believe in creating not just beautiful websites, but ones that perform exceptionally well in search rankings and provide outstanding user experiences.
-            </p>
+            <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
+              <p>
+                I'm a frontend-focused engineer with 5+ years of experience building responsive, high-performance web applications using React, Next.js, and modern UI frameworks like Tailwind CSS.
+              </p>
+              <p>
+                I've led SaaS development from scratch, contributed to e-commerce platforms, and built real-time tools using Supabase. I care deeply about clean architecture, component reusability, Core Web Vitals, and user experience.
+              </p>
+              <p>
+                Open to frontend-focused roles where I can ship well-crafted interfaces, collaborate cross-functionally, and grow alongside a product team.
+              </p>
+              <p className="font-medium text-gray-700">
+                <strong>Tools I use:</strong> React, Next.js, TypeScript, Tailwind, Supabase, Git, Vite, GA4, and more.
+              </p>
+            </div>
             <div className="grid grid-cols-2 gap-6">
               {achievements.map((achievement, index) => (
                 <div key={index} className="text-center p-4 rounded-lg bg-gray-50 hover-lift">

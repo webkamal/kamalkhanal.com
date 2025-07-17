@@ -4,59 +4,57 @@ import { Calendar, MapPin, ExternalLink, Briefcase, Award, TrendingUp, Users, Co
 const Experience: React.FC = () => {
   const experiences = [
     {
-      title: 'Founder / Web Developer & Digital Strategist',
+      title: 'Founder & Frontend Engineer',
       company: 'WebQuick',
-      location: 'Sydney, Australia',
+      location: 'Remote',
       period: 'Mar 2024 - Present',
-      status: 'Founder',
-      type: 'Self-employed',
-      description: 'A web agency I built to deliver high-performance, SEO-optimized websites to small Australian businesses. At WebQuick, I led both the technical development and strategic planning for 10+ projects, combining clean code with real marketing outcomes.',
+      status: 'Current',
+      type: 'Founder',
+      description: 'Built SaaS website builder for tradespeople using Next.js 15, Tailwind, and Stripe. Leading both technical development and product strategy.',
       achievements: [
-        'Successfully launched 10+ client websites with modern design and SEO optimization',
-        'Established complete business infrastructure including hosting, domain management, and client onboarding processes'
+        'Built SaaS website builder for tradespeople using Next.js 15, Tailwind, and Stripe',
+        'Developed onboarding automation and responsive UI components',
+        'Managed deployment and versioning via Git + Vercel'
       ],
-      skills: ['React', 'NextJS', 'SEO', 'Digital Strategy', 'Vercel'],
+      skills: ['Next.js 15', 'Tailwind CSS', 'Stripe', 'Git', 'Vercel', 'SaaS Development'],
       icon: Award,
       color: 'from-purple-500 to-pink-600',
       bgColor: 'bg-purple-50',
       borderColor: 'border-purple-200'
     },
     {
-      title: 'Web Developer / SEO Specialist',
+      title: 'Web Developer',
       company: 'Show Tile',
-      location: 'Sydney, Australia',
+      location: 'Bankstown, NSW',
       period: 'Jun 2023 - Mar 2024',
       status: 'Full-time',
       type: 'Full-time',
-      description: 'Specialized in e-commerce development and digital marketing solutions',
+      description: 'Focused on frontend development and performance optimization for e-commerce platform',
       achievements: [
-        'Rebuilt and optimized the company\'s e-commerce website using WordPress & WooCommerce',
-        'Managed Google Ads campaigns, tracked conversions, and reduced CPC',
-        'Improved local SEO, implemented structured data, and boosted Google rankings',
-        'Collaborated with internal teams to enhance UX, mobile responsiveness, and speed',
-        'Projects: cheapestiles.com.au, gettilesonline.com.au, showtile.com.au'
+        'Rebuilt WooCommerce frontend using React.js + WordPress REST API',
+        'Boosted Core Web Vitals scores (LCP, CLS) by optimizing images and layouts',
+        'Automated inventory syncing and improved SEO with structured data'
       ],
-      skills: ['WooCommerce', 'Google Ads', 'Local SEO', 'Google Analytics', 'SEMRush'],
+      skills: ['React.js', 'WordPress REST API', 'WooCommerce', 'Core Web Vitals', 'SEO', 'Performance Optimization'],
       icon: Globe,
       color: 'from-green-500 to-teal-600',
       bgColor: 'bg-green-50',
       borderColor: 'border-green-200'
     },
     {
-      title: 'Freelance Web Developer / SEO Consultant',
+      title: 'Full-Stack Developer',
       company: 'SiteGuru',
-      location: 'Remote',
-      period: '2019 - 2023',
+      location: 'Freelance',
+      period: 'Feb 2019 - Jun 2023',
       status: 'Freelance',
       type: 'Freelance',
-      description: 'Leading web development and digital marketing projects remotely',
+      description: 'Led web development and digital marketing projects for various clients',
       achievements: [
-        'Built and managed 20+ websites using WordPress, Elementor, and WooCommerce',
-        'Created and maintained Google PPC campaigns for local businesses',
-        'Improved organic search rankings through on-page SEO, content optimization, and schema',
-        'Projects: bellaskinclinic.com.au, mintfencing.com.au, quickcleaners.com.au, skafflegal.com, et cetera'
+        'Built and managed 20+ WordPress websites (Elementor, WooCommerce)',
+        'Implemented SEO strategies, tracked campaigns via GA4 + Tag Manager',
+        'Launched local PPC campaigns and advised on digital growth'
       ],
-      skills: ['WordPress', 'Elementor', 'WooCommerce', 'SEO', 'Google Ads', 'PPC'],
+      skills: ['WordPress', 'Elementor', 'WooCommerce', 'GA4', 'Tag Manager', 'PPC', 'Digital Marketing'],
       icon: Code2,
       color: 'from-blue-500 to-purple-600',
       bgColor: 'bg-blue-50',
@@ -65,17 +63,17 @@ const Experience: React.FC = () => {
     {
       title: 'Web Developer',
       company: 'All in IT Solutions',
-      location: 'Sydney, Australia',
-      period: '2015 - 2018',
+      location: 'Sydney',
+      period: 'Jun 2015 - Feb 2018',
       status: 'Full-time',
       type: 'Full-time',
-      description: 'Focused on business website development and search engine optimization',
+      description: 'Maintained and developed client websites with focus on performance and user experience',
       achievements: [
-        'Managed business websites, landing pages, and e-commerce stores',
-        'Led redesigns, WordPress migrations, site speed improvements, and SEO audits',
-        'Ran Google Ads and performed lead generation for small businesses'
+        'Maintained and redesigned client websites, landing pages, and ecommerce stores',
+        'Performed SEO audits, implemented on-page optimizations and AdWords campaigns',
+        'Trained clients on CMS usage and implemented uptime monitoring'
       ],
-      skills: ['WordPress', 'WP Bakery', 'Opencart', 'Gravity Forms', 'Lead Generation', 'Site Migration', 'AWS'],
+      skills: ['WordPress', 'Landing Pages', 'E-commerce', 'SEO Audits', 'AdWords', 'CMS Training'],
       icon: TrendingUp,
       color: 'from-orange-500 to-red-600',
       bgColor: 'bg-orange-50',
@@ -97,7 +95,7 @@ const Experience: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Professional Experience</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            My journey in web development and digital marketing across Australia
+            My journey in frontend engineering and web development
           </p>
         </div>
 
