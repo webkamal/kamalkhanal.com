@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
             </h1>
             
             <h2 className="text-2xl md:text-3xl text-purple-200 mb-6 font-light">
-              Full-Stack Web Developer (React / Next.js / Supabase / Stripe)
+              Full-Stack Web Developer (React / Next.js)
             </h2>
             
             <p className="text-lg md:text-xl text-purple-100 mb-8 max-w-2xl leading-relaxed">
