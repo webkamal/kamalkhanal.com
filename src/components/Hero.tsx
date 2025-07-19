@@ -34,18 +34,15 @@ const Hero: React.FC = () => {
           {/* Left Content */}
           <div className="text-left animate-fadeInLeft mt-8">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              Hi, I'm{' '}
-              <span className="block text-white">
-                Kamal Khanal
-              </span>
+              Hi, I'm Kamal
             </h1>
             
             <h2 className="text-2xl md:text-3xl text-purple-200 mb-6 font-light">
-              Frontend Engineer – React / Next.js
+              Full-Stack Web Developer (React / Next.js / Supabase / Stripe)
             </h2>
             
             <p className="text-lg md:text-xl text-purple-100 mb-8 max-w-2xl leading-relaxed">
-              Frontend-focused engineer building high-performance, user-centric web applications using React, Next.js, and Tailwind CSS.
+              Building fast, scalable, and user-centric web apps with modern frameworks like React, Next.js, and Supabase.
             </p>
             
             {/* Buttons */}
@@ -58,8 +55,8 @@ const Hero: React.FC = () => {
                 <span>View My Work</span>
               </button>
               <a
-                href="/kamalkhanal--cv.pdf"
-                download="kamalkhanal--cv.pdf"
+                href="/kamal-resume.pdf"
+                download="kamal-resume.pdf"
                 className="group border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-purple-700 transition-all duration-300 flex items-center justify-center space-x-2"
               >
                 <Download className="w-5 h-5" />

@@ -1,52 +1,47 @@
 import React from 'react';
-import { Code, Database, Search, Globe, Smartphone, Server, BarChart3, Target, TrendingUp } from 'lucide-react';
+import { Code, Database, Globe, Wrench, Layers } from 'lucide-react';
 
 const Skills: React.FC = () => {
   const skillCategories = [
     {
-      title: 'Frontend Development',
+      title: 'Languages',
       icon: Code,
       color: 'from-blue-500 to-purple-600',
       bgColor: 'bg-blue-50',
       iconColor: 'text-blue-600',
-      skills: [
-        { name: 'React.js', level: 90 },
-        { name: 'JavaScript', level: 95 },
-        { name: 'HTML5/CSS3', level: 95 },
-        { name: 'TypeScript', level: 85 },
-        { name: 'Tailwind CSS', level: 90 },
-        { name: 'Vue.js', level: 80 }
-      ]
+      skills: ['JavaScript (ES6+)', 'TypeScript', 'SQL']
     },
     {
-      title: 'Backend & CMS',
-      icon: Database,
+      title: 'Frontend',
+      icon: Layers,
       color: 'from-green-500 to-teal-600',
       bgColor: 'bg-green-50',
       iconColor: 'text-green-600',
-      skills: [
-        { name: 'WordPress', level: 95 },
-        { name: 'PHP', level: 85 },
-        { name: 'MySQL', level: 80 },
-        { name: 'Node.js', level: 75 },
-        { name: 'MongoDB', level: 70 },
-        { name: 'REST APIs', level: 85 }
-      ]
+      skills: ['React', 'Next.js', 'Tailwind CSS', 'Shadcn/ui']
     },
     {
-      title: 'SEO & Marketing',
-      icon: Search,
+      title: 'Backend',
+      icon: Database,
+      color: 'from-purple-500 to-pink-600',
+      bgColor: 'bg-purple-50',
+      iconColor: 'text-purple-600',
+      skills: ['Node.js', 'Supabase', 'PostgreSQL', 'Prisma', 'Stripe API']
+    },
+    {
+      title: 'Tools',
+      icon: Wrench,
       color: 'from-orange-500 to-red-600',
       bgColor: 'bg-orange-50',
       iconColor: 'text-orange-600',
-      skills: [
-        { name: 'SEO Optimization', level: 90 },
-        { name: 'Google Analytics', level: 85 },
-        { name: 'Digital Marketing', level: 80 },
-        { name: 'Content Strategy', level: 85 },
-        { name: 'Keyword Research', level: 88 },
-        { name: 'Technical SEO', level: 92 }
-      ]
+      skills: ['Git', 'Vercel', 'Netlify', 'Figma', 'REST APIs', 'VS Code']
+    },
+    {
+      title: 'Other',
+      icon: Globe,
+      color: 'from-indigo-500 to-blue-600',
+      bgColor: 'bg-indigo-50',
+      iconColor: 'text-indigo-600',
+      skills: ['SEO', 'WordPress', 'Technical Content', 'Agile Development']
     }
   ];
 
@@ -56,85 +51,73 @@ const Skills: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Skills & Expertise</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            I combine technical expertise with creative problem-solving to deliver exceptional results
+            Modern full-stack technologies and tools I use to build exceptional web applications
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {skillCategories.map((category, categoryIndex) => (
             <div 
               key={categoryIndex} 
-              className="bg-white rounded-2xl shadow-xl overflow-hidden hover-lift animate-fadeInUp transform hover:scale-105 transition-all duration-500"
-              style={{ animationDelay: `${categoryIndex * 0.2}s` }}
+              className="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift animate-fadeInUp transform hover:scale-105 transition-all duration-500 group"
+              style={{ animationDelay: `${categoryIndex * 0.1}s` }}
             >
               {/* Category Header */}
               <div className={`${category.bgColor} p-6 text-center relative overflow-hidden`}>
-                <div className="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full -mr-10 -mt-10"></div>
-                <div className="absolute bottom-0 left-0 w-16 h-16 bg-white/10 rounded-full -ml-8 -mb-8"></div>
+                <div className="absolute top-0 right-0 w-16 h-16 bg-white/10 rounded-full -mr-8 -mt-8"></div>
+                <div className="absolute bottom-0 left-0 w-12 h-12 bg-white/10 rounded-full -ml-6 -mb-6"></div>
                 <div className="relative z-10">
-                  <div className={`inline-flex items-center justify-center w-16 h-16 ${category.iconColor} bg-white rounded-full shadow-lg mb-4 transform hover:rotate-12 transition-transform duration-300`}>
-                    <category.icon className="w-8 h-8" />
+                  <div className={`inline-flex items-center justify-center w-12 h-12 ${category.iconColor} bg-white rounded-xl shadow-lg mb-3 transform group-hover:rotate-12 transition-transform duration-300`}>
+                    <category.icon className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-800">{category.title}</h3>
+                  <h3 className="text-lg font-bold text-gray-800">{category.title}</h3>
                 </div>
               </div>
 
               {/* Skills List */}
-              <div className="p-6 space-y-6">
-                {category.skills.map((skill, skillIndex) => (
-                  <div 
-                    key={skillIndex} 
-                    className="animate-fadeInUp"
-                    style={{ animationDelay: `${(categoryIndex * 0.2) + (skillIndex * 0.1)}s` }}
-                  >
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-gray-800 font-medium">{skill.name}</span>
-                      <span className="text-gray-600 text-sm font-semibold">{skill.level}%</span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
-                      <div 
-                        className={`bg-gradient-to-r ${category.color} h-3 rounded-full progress-bar transform origin-left scale-x-0 animate-[scaleX_1.5s_ease-out_forwards] relative overflow-hidden`}
-                        style={{ 
-                          width: `${skill.level}%`,
-                          animationDelay: `${(categoryIndex * 0.3) + (skillIndex * 0.1)}s`
-                        }}
-                      >
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer"></div>
+              <div className="p-6">
+                <div className="space-y-3">
+                  {category.skills.map((skill, skillIndex) => (
+                    <div 
+                      key={skillIndex} 
+                      className="animate-fadeInUp group/skill"
+                      style={{ animationDelay: `${(categoryIndex * 0.1) + (skillIndex * 0.05)}s` }}
+                    >
+                      <div className="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                        <div className={`w-2 h-2 bg-gradient-to-r ${category.color} rounded-full flex-shrink-0 group-hover/skill:scale-125 transition-transform duration-200`}></div>
+                        <span className="text-gray-700 font-medium text-sm group-hover/skill:text-gray-900 transition-colors duration-200">
+                          {skill}
+                        </span>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
 
               {/* Bottom Accent */}
-              <div className={`h-1 bg-gradient-to-r ${category.color}`}></div>
+              <div className={`h-1 bg-gradient-to-r ${category.color} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left`}></div>
             </div>
           ))}
         </div>
 
-        {/* Additional Skills Grid */}
-        <div className="mt-16">
-          <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Additional Technologies</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {[
-              { name: 'Git', icon: Code },
-              { name: 'Docker', icon: Server },
-              { name: 'AWS', icon: Globe },
-              { name: 'Figma', icon: Smartphone },
-              { name: 'Analytics', icon: BarChart3 },
-              { name: 'Optimization', icon: Target }
-            ].map((tech, index) => (
-              <div 
-                key={index}
-                className="bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 text-center group hover:scale-105 animate-fadeInUp"
-                style={{ animationDelay: `${1 + (index * 0.1)}s` }}
-              >
-                <tech.icon className="w-8 h-8 text-gray-600 mx-auto mb-2 group-hover:text-blue-600 transition-colors duration-300" />
-                <span className="text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors duration-300">
-                  {tech.name}
+        {/* Tech Stack Summary */}
+        <div className="mt-16 bg-white rounded-2xl shadow-lg p-8 animate-fadeInUp" style={{ animationDelay: '0.6s' }}>
+          <div className="text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">My Tech Stack</h3>
+            <div className="flex flex-wrap justify-center gap-3">
+              {[
+                'React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Node.js', 
+                'Supabase', 'PostgreSQL', 'Stripe', 'Vercel', 'Git'
+              ].map((tech, index) => (
+                <span 
+                  key={index}
+                  className="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full font-medium text-sm shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 animate-fadeInUp"
+                  style={{ animationDelay: `${0.7 + (index * 0.05)}s` }}
+                >
+                  {tech}
                 </span>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

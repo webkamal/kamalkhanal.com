@@ -17,16 +17,13 @@ const About: React.FC = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-6">About Me</h2>
             <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
               <p>
-                I'm a frontend-focused engineer with 5+ years of experience building responsive, high-performance web applications using React, Next.js, and modern UI frameworks like Tailwind CSS.
+                I'm a full-stack web developer with a passion for crafting digital products that are both beautiful and functional.
               </p>
               <p>
-                I've led SaaS development from scratch, contributed to e-commerce platforms, and built real-time tools using Supabase. I care deeply about clean architecture, component reusability, Core Web Vitals, and user experience.
+                With over 10 years in web development and recent deep focus on modern stacks like React, Next.js, Supabase, and Stripe, I specialize in building powerful web applications with real-world utility. From building SaaS tools for tradies, AI blog generators, to headless e-commerce stores, I've worked across domains that demand performance, design, and scalability.
               </p>
               <p>
-                Open to frontend-focused roles where I can ship well-crafted interfaces, collaborate cross-functionally, and grow alongside a product team.
-              </p>
-              <p className="font-medium text-gray-700">
-                <strong>Tools I use:</strong> React, Next.js, TypeScript, Tailwind, Supabase, Git, Vite, GA4, and more.
+                Whether you're looking for a frontend wizard or someone who can manage the full lifecycle of your application — from architecture to deployment — I bring clarity, speed, and craftsmanship to every line of code.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-6">

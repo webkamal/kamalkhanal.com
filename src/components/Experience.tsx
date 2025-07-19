@@ -4,19 +4,19 @@ import { Calendar, MapPin, ExternalLink, Briefcase, Award, TrendingUp, Users, Co
 const Experience: React.FC = () => {
   const experiences = [
     {
-      title: 'Founder & Frontend Engineer',
+      title: 'Founder / Full-Stack Developer',
       company: 'WebQuick',
       location: 'Remote',
       period: 'Mar 2024 - Present',
       status: 'Current',
       type: 'Founder',
-      description: 'Built SaaS website builder for tradespeople using Next.js 15, Tailwind, and Stripe. Leading both technical development and product strategy.',
+      description: 'Architected and launched a fully functional website builder platform for Australian tradies with complete user management and billing systems.',
       achievements: [
-        'Built SaaS website builder for tradespeople using Next.js 15, Tailwind, and Stripe',
-        'Developed onboarding automation and responsive UI components',
-        'Managed deployment and versioning via Git + Vercel'
+        'Architected and launched a fully functional website builder platform for Australian tradies',
+        'Built user onboarding, role-based auth, dashboard UI, and Stripe metered billing system',
+        'Designed the marketing site using WordPress and integrated with React dashboard'
       ],
-      skills: ['Next.js 15', 'Tailwind CSS', 'Stripe', 'Git', 'Vercel', 'SaaS Development'],
+      skills: ['Next.js', 'React', 'Stripe API', 'WordPress', 'Role-based Auth', 'Dashboard UI', 'SaaS Architecture'],
       icon: Award,
       color: 'from-purple-500 to-pink-600',
       bgColor: 'bg-purple-50',
@@ -29,55 +29,36 @@ const Experience: React.FC = () => {
       period: 'Jun 2023 - Mar 2024',
       status: 'Full-time',
       type: 'Full-time',
-      description: 'Focused on frontend development and performance optimization for e-commerce platform',
+      description: 'Led frontend development and performance optimization for e-commerce platform, achieving significant improvements in user experience and site performance.',
       achievements: [
-        'Rebuilt WooCommerce frontend using React.js + WordPress REST API',
-        'Boosted Core Web Vitals scores (LCP, CLS) by optimizing images and layouts',
-        'Automated inventory syncing and improved SEO with structured data'
+        'Rebuilt company e-commerce store using React frontend with WordPress API',
+        'Optimized Core Web Vitals and automated inventory sync',
+        'Improved user experience and reduced bounce rate by 35%'
       ],
-      skills: ['React.js', 'WordPress REST API', 'WooCommerce', 'Core Web Vitals', 'SEO', 'Performance Optimization'],
+      skills: ['React.js', 'WordPress API', 'Core Web Vitals', 'E-commerce', 'Performance Optimization', 'Inventory Automation'],
       icon: Globe,
       color: 'from-green-500 to-teal-600',
       bgColor: 'bg-green-50',
       borderColor: 'border-green-200'
     },
     {
-      title: 'Full-Stack Developer',
+      title: 'Freelance Full-Stack Developer',
       company: 'SiteGuru',
-      location: 'Freelance',
-      period: 'Feb 2019 - Jun 2023',
+      location: 'Sydney, Remote',
+      period: '2019 - 2023',
       status: 'Freelance',
       type: 'Freelance',
-      description: 'Led web development and digital marketing projects for various clients',
+      description: 'Delivered comprehensive web solutions for small businesses, combining development expertise with digital marketing strategies to drive growth.',
       achievements: [
-        'Built and managed 20+ WordPress websites (Elementor, WooCommerce)',
-        'Implemented SEO strategies, tracked campaigns via GA4 + Tag Manager',
-        'Launched local PPC campaigns and advised on digital growth'
+        'Delivered SEO-optimized websites and marketing automation for small businesses',
+        'Managed Google Ads campaigns, landing page optimization, and analytics dashboards',
+        'Built client websites using WordPress, WooCommerce, and Elementor'
       ],
-      skills: ['WordPress', 'Elementor', 'WooCommerce', 'GA4', 'Tag Manager', 'PPC', 'Digital Marketing'],
+      skills: ['WordPress', 'WooCommerce', 'Elementor', 'Google Ads', 'SEO', 'Marketing Automation', 'Analytics'],
       icon: Code2,
       color: 'from-blue-500 to-purple-600',
       bgColor: 'bg-blue-50',
       borderColor: 'border-blue-200'
-    },
-    {
-      title: 'Web Developer',
-      company: 'All in IT Solutions',
-      location: 'Sydney',
-      period: 'Jun 2015 - Feb 2018',
-      status: 'Full-time',
-      type: 'Full-time',
-      description: 'Maintained and developed client websites with focus on performance and user experience',
-      achievements: [
-        'Maintained and redesigned client websites, landing pages, and ecommerce stores',
-        'Performed SEO audits, implemented on-page optimizations and AdWords campaigns',
-        'Trained clients on CMS usage and implemented uptime monitoring'
-      ],
-      skills: ['WordPress', 'Landing Pages', 'E-commerce', 'SEO Audits', 'AdWords', 'CMS Training'],
-      icon: TrendingUp,
-      color: 'from-orange-500 to-red-600',
-      bgColor: 'bg-orange-50',
-      borderColor: 'border-orange-200'
     }
   ];
 
@@ -95,14 +76,14 @@ const Experience: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Professional Experience</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            My journey in frontend engineering and web development
+            My journey in full-stack development and digital product creation
           </p>
         </div>
 
         {/* Experience Timeline */}
         <div className="relative">
           {/* Timeline Line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-green-500 via-orange-500 to-purple-500 hidden md:block"></div>
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-500 via-green-500 to-blue-500 hidden md:block"></div>
 
           <div className="space-y-8">
             {experiences.map((exp, index) => (
@@ -146,6 +127,8 @@ const Experience: React.FC = () => {
                             <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
                               exp.status === 'Current' 
                                 ? 'bg-green-100 text-green-800' 
+                                : exp.status === 'Freelance'
+                                ? 'bg-purple-100 text-purple-800'
                                 : 'bg-blue-100 text-blue-800'
                             }`}>
                               {exp.status}

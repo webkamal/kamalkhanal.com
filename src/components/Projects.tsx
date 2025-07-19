@@ -5,50 +5,42 @@ const Projects: React.FC = () => {
   const projects = [
     {
       title: 'Kamal AI - AI Blog Generator',
-      description: 'AI-powered blog article generator built with React.js and Supabase. Integrated OpenAI APIs and real-time DB sync with minimal UI design using Tailwind CSS.',
+      description: 'AI-powered content creation tool generating SEO-optimized blog articles from topic input. Built using React and TailwindCSS with real-time data storage in Supabase. Users can generate, save, and manage articles from their dashboard.',
       image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React.js', 'Supabase', 'OpenAI API', 'Tailwind CSS', 'Real-time DB'],
-      liveUrl: 'https://kamalkhanal.com',
+      technologies: ['React', 'Supabase', 'OpenAI API', 'TailwindCSS', 'Real-time DB'],
+      liveUrl: 'https://kamal.cc',
       githubUrl: '#'
     },
     {
-      title: 'Link Vault - Tab Manager',
-      description: 'Hacker News-style tab manager built with Next.js and Supabase. Features authentication, voting, and real-time updates with plans to integrate Chrome Extension.',
-      image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Next.js', 'Supabase', 'Authentication', 'Real-time Updates', 'Chrome Extension'],
-      liveUrl: 'https://link-vault-alpha.lovable.app',
-      githubUrl: '#'
-    },
-    {
-      title: 'Portfolio Website',
-      description: 'Custom-built portfolio using React.js + Bolt.new. Showcases personal projects, skills, and resume. Deployed on Netlify with custom domain and performance optimizations.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React.js', 'Bolt.new', 'Netlify', 'Performance Optimization', 'Custom Domain'],
-      liveUrl: 'https://kamalkhanal.com',
-      githubUrl: '#'
-    },
-    {
-      title: 'WebQuick - SaaS Website Builder',
-      description: 'SaaS website builder for tradespeople built with Next.js 15, Tailwind, and Stripe. Features onboarding automation and responsive UI components.',
+      title: 'WebQuick - Website Builder for Tradies',
+      description: 'SaaS platform enabling tradies to launch modern websites in minutes with zero code. Integrated Stripe for subscriptions and Supabase for database/auth. Features include role-based access, onboarding wizard, and user dashboards.',
       image: 'https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Next.js 15', 'Tailwind CSS', 'Stripe', 'SaaS', 'Automation'],
+      technologies: ['Next.js', 'Supabase', 'Stripe', 'Role-based Auth', 'SaaS'],
       liveUrl: 'https://webquick.com.au',
       githubUrl: '#'
     },
     {
-      title: 'Show Tile - React Frontend Rebuild',
-      description: 'Rebuilt WooCommerce frontend using React.js + WordPress REST API. Boosted Core Web Vitals scores and automated inventory syncing with improved SEO.',
-      image: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React.js', 'WordPress REST API', 'WooCommerce', 'Core Web Vitals', 'SEO'],
-      liveUrl: 'https://showtile.com.au',
+      title: 'InvoicerPro - Freelancer Invoicing SaaS',
+      description: 'Built full-stack invoicing tool with PDF generation and client/project tracking. Implemented Stripe subscriptions and multi-step invoice creation flow. Responsive UI with invoice status boards and downloadable PDFs.',
+      image: 'https://images.pexels.com/photos/6863183/pexels-photo-6863183.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'Stripe', 'PDF Generation'],
+      liveUrl: '#',
       githubUrl: '#'
     },
     {
-      title: 'SiteGuru - WordPress Platform',
-      description: 'Built and managed 20+ WordPress websites with Elementor and WooCommerce. Implemented SEO strategies and tracked campaigns via GA4 + Tag Manager.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['WordPress', 'Elementor', 'WooCommerce', 'GA4', 'Tag Manager'],
-      liveUrl: 'https://siteguru.com.au',
+      title: 'PromptCrafter - AI Prompt Marketplace',
+      description: 'Marketplace for buying/selling AI prompts with seller profiles and ratings. Integrated secure Stripe payments and email notifications via Resend. Feature-rich search, tagging, filtering, and prompt previews.',
+      image: 'https://images.pexels.com/photos/8849295/pexels-photo-8849295.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Next.js', 'Supabase', 'Stripe', 'Resend', 'Marketplace'],
+      liveUrl: '#',
+      githubUrl: '#'
+    },
+    {
+      title: 'DevStore - Headless E-commerce Storefront',
+      description: 'Developed modern storefront with custom cart, checkout, and CMS integration. Consumed Medusa Commerce API for product inventory, payments, and orders. Optimized for Core Web Vitals and implemented product filters and reviews.',
+      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Next.js', 'Medusa', 'TailwindCSS', 'Core Web Vitals', 'E-commerce'],
+      liveUrl: '#',
       githubUrl: '#'
     }
   ];
@@ -59,59 +51,116 @@ const Projects: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Recent projects showcasing my frontend engineering and full-stack development skills
+            Recent full-stack projects showcasing modern web development with React, Next.js, and SaaS architectures
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover-lift animate-fadeInUp" style={{ animationDelay: `${index * 0.2}s` }}>
+            <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover-lift animate-fadeInUp group" style={{ animationDelay: `${index * 0.2}s` }}>
               <div className="relative overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover transform hover:scale-110 transition-transform duration-500"
+                  className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div className="flex space-x-2">
+                    {project.liveUrl !== '#' && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full text-gray-800 hover:bg-white transition-colors duration-200"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                      </a>
+                    )}
+                    <button
+                      onClick={() => {
+                        const element = document.getElementById('contact');
+                        if (element) {
+                          element.scrollIntoView({ behavior: 'smooth' });
+                        }
+                      }}
+                      className="flex items-center justify-center w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full text-gray-800 hover:bg-white transition-colors duration-200"
+                    >
+                      <Github className="w-4 h-4" />
+                    </button>
+                  </div>
+                </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{project.title}</h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-200">
+                  {project.title}
+                </h3>
+                <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+                  {project.description}
+                </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
+                    <span 
+                      key={techIndex} 
+                      className="px-3 py-1 bg-gradient-to-r from-blue-50 to-purple-50 text-blue-700 text-xs font-medium rounded-full border border-blue-100 hover:from-blue-100 hover:to-purple-100 transition-colors duration-200"
+                    >
                       {tech}
                     </span>
                   ))}
                 </div>
-                <div className="flex space-x-4">
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200"
-                  >
-                    <ExternalLink className="w-4 h-4 mr-1" />
-                    Live Demo
-                  </a>
-                  <a
-                    href="#contact"
-                    onClick={(e) => {
-                      e.preventDefault();
+                <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                  {project.liveUrl !== '#' ? (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200 font-medium"
+                    >
+                      <ExternalLink className="w-4 h-4 mr-1" />
+                      Live Demo
+                    </a>
+                  ) : (
+                    <span className="text-gray-400 text-sm">Demo Available on Request</span>
+                  )}
+                  <button
+                    onClick={() => {
                       const element = document.getElementById('contact');
                       if (element) {
                         element.scrollIntoView({ behavior: 'smooth' });
                       }
                     }}
-                    className="flex items-center text-gray-600 hover:text-gray-800 transition-colors duration-200 cursor-pointer"
+                    className="flex items-center text-gray-600 hover:text-gray-800 transition-colors duration-200 font-medium cursor-pointer"
                   >
                     <Github className="w-4 h-4 mr-1" />
                     Contact Me
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Additional Projects Note */}
+        <div className="text-center mt-12">
+          <div className="inline-flex items-center justify-center p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl border border-blue-100">
+            <div className="text-center">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">More Projects Available</h3>
+              <p className="text-gray-600 mb-4">
+                I have additional projects and case studies available upon request, including client work and experimental builds.
+              </p>
+              <button
+                onClick={() => {
+                  const element = document.getElementById('contact');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
+              >
+                View More Projects
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
