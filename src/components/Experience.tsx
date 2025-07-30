@@ -44,7 +44,7 @@ const Experience: React.FC = () => {
       borderColor: 'border-green-200'
     },
     {
-      title: 'Freelance Full-Stack Developer',
+      title: 'Web Developer',
       company: 'SiteGuru',
       location: 'Sydney, Remote',
       period: '2019 - 2023',
