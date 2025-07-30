@@ -121,8 +121,8 @@ const Contact: React.FC = () => {
             {/* Download CV Button */}
             <div className="mt-6">
               <a
-                href="/kamal-resume.pdf"
-                download="kamal-resume.pdf"
+                href="/Kamal Khanal — Full Stack Web Developer.pdf"
+                download="Kamal Khanal — Full Stack Web Developer.pdf"
                 className="inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group"
               >
                 <Download className="w-5 h-5 mr-2 group-hover:animate-bounce" />
