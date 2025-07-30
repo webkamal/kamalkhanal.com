@@ -24,19 +24,20 @@ const Experience: React.FC = () => {
       borderColor: 'border-purple-200'
     },
     {
-      title: 'Web Developer',
+      title: 'Web Developer / SEO Specialist',
       company: 'Show Tile',
       location: 'Bankstown, NSW',
       period: 'Jun 2023 - Mar 2024',
       status: 'Full-time',
       type: 'Full-time',
-      description: 'Led frontend development and performance optimization for e-commerce platform, achieving significant improvements in user experience and site performance.',
+      description: 'Led frontend development, SEO optimization, and performance improvements for e-commerce platform, achieving significant growth in organic traffic and user experience.',
       achievements: [
-        'Rebuilt company e-commerce store using React frontend with WordPress API',
-        'Optimized Core Web Vitals and automated inventory sync',
-        'Improved user experience and reduced bounce rate by 35%'
+        'Rebuilt the company e-commerce store using a React frontend and WordPress API backend',
+        'Improved site SEO by optimizing metadata, improving site speed, and enhancing mobile responsiveness',
+        'Implemented SEO best practices resulting in increased organic traffic and higher search engine rankings',
+        'Automated inventory syncing and reduced bounce rate by 35% through UX improvements and faster load times'
       ],
-      skills: ['React.js', 'WordPress API', 'Core Web Vitals', 'E-commerce', 'Performance Optimization', 'Inventory Automation'],
+      skills: ['React.js', 'WordPress API', 'SEO Optimization', 'Core Web Vitals', 'E-commerce', 'Performance Optimization', 'Inventory Automation'],
       icon: Globe,
       color: 'from-green-500 to-teal-600',
       bgColor: 'bg-green-50',
