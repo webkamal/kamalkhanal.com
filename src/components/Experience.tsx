@@ -4,19 +4,20 @@ import { Calendar, MapPin, ExternalLink, Briefcase, Award, TrendingUp, Users, Co
 const Experience: React.FC = () => {
   const experiences = [
     {
-      title: 'Founder / Full-Stack Developer',
-      company: 'WebQuick',
-      location: 'Remote',
-      period: 'Mar 2024 - Present',
+      title: 'Freelance Full-Stack Developer',
+      company: 'JustWork – Freelance Marketplace',
+      location: 'justwork.com.au',
+      period: 'Jan 2024 - Present',
       status: 'Current',
-      type: 'Founder',
-      description: 'Architected and launched a fully functional website builder platform for Australian tradies with complete user management and billing systems.',
+      type: 'Freelance',
+      description: 'Providing freelance development services through JustWork, a self-built freelance job platform.',
       achievements: [
-        'Architected and launched a fully functional website builder platform for Australian tradies',
-        'Built user onboarding, role-based auth, dashboard UI, and Stripe metered billing system',
-        'Designed the marketing site using WordPress and integrated with React dashboard'
+        'Built the MVP using Next.js API routes, Supabase (PostgreSQL + Auth), and Tailwind CSS, deployed on Vercel',
+        'Implemented role-based dashboards, job posting, job applications, and basic client–freelancer messaging',
+        'Leveraged Supabase Auth for user authentication and Supabase Realtime DB for data sync and notifications',
+        'Designed scalable schema with users, jobs, applications, and messages tables using Supabase\'s hosted Postgres'
       ],
-      skills: ['Next.js', 'React', 'Stripe API', 'WordPress', 'Role-based Auth', 'Dashboard UI', 'SaaS Architecture'],
+      skills: ['Next.js', 'Supabase', 'PostgreSQL', 'Tailwind CSS', 'Vercel', 'Role-based Auth', 'Realtime DB'],
       icon: Award,
       color: 'from-purple-500 to-pink-600',
       bgColor: 'bg-purple-50',
