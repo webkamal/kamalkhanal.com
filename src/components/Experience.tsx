@@ -7,7 +7,7 @@ const Experience: React.FC = () => {
       title: 'Freelance Full-Stack Developer',
       company: 'JustWork – Freelance Marketplace',
       location: 'justwork.com.au',
-      period: 'Jan 2024 - Present',
+      period: 'Mar 2024 - Present',
       status: 'Current',
       type: 'Freelance',
       description: 'Providing freelance development services through JustWork, a self-built freelance job platform.',
