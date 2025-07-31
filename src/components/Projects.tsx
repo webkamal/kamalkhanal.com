@@ -7,16 +7,11 @@ const Projects: React.FC = () => {
       title: 'Kamal AI - AI Blog Generator',
       description: 'AI-powered content creation tool generating SEO-optimized blog articles from topic input. Built using React and TailwindCSS with real-time data storage in Supabase. Users can generate, save, and manage articles from their dashboard.',
       image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Supabase', 'OpenAI API', 'TailwindCSS', 'Real-time DB'],
-      liveUrl: 'https://kamal.cc',
-      githubUrl: '#'
-    },
-    {
-      title: 'WebQuick - Website Builder for Tradies',
-      description: 'SaaS platform enabling tradies to launch modern websites in minutes with zero code. Integrated Stripe for subscriptions and Supabase for database/auth. Features include role-based access, onboarding wizard, and user dashboards.',
-      image: 'https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Next.js', 'Supabase', 'Stripe', 'Role-based Auth', 'SaaS'],
-      liveUrl: 'https://webquick.com.au',
+      title: 'JustWork - Freelance Marketplace',
+      description: 'Self-built freelance job platform connecting clients with skilled freelancers. Features role-based dashboards, job posting system, application management, and real-time messaging between clients and freelancers.',
+      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Next.js', 'Supabase', 'PostgreSQL', 'Tailwind CSS', 'Vercel', 'Real-time DB'],
+      liveUrl: 'https://justwork.com.au',
       githubUrl: '#'
     },
     {
