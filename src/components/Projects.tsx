@@ -12,8 +12,8 @@ const Projects: React.FC = () => {
       githubUrl: '#'
     },
     {
-      title: 'VideoBite – Faceless Video Creator using AI (In Progress)',
-      description: 'AI-powered tool to create YouTube shorts, reels, and other faceless videos using AI-generated scripts, voiceovers, and automated editing. Integrates OpenAI API for scriptwriting, Text-to-Speech engines for voice generation, and FFmpeg for video compilation. Designed to help content creators produce scalable video content without appearing on camera.',
+      title: 'Faceless AI',
+      description: 'AI-powered platform designed to automate the creation of viral faceless videos. It generates engaging scripts from user topics, integrates AI voiceovers, selects relevant stock footage, and applies dynamic text overlays, all optimized for various social media platforms like YouTube, TikTok, and Instagram.',
       image: 'https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['OpenAI API', 'Text-to-Speech', 'FFmpeg', 'Video Automation', 'Content Creation'],
       liveUrl: '#',
