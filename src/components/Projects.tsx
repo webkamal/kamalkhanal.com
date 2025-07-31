@@ -8,6 +8,14 @@ const Projects: React.FC = () => {
       description: 'AI-powered content creation tool generating SEO-optimized blog articles from topic input. Built using React and TailwindCSS with real-time data storage in Supabase. Users can generate, save, and manage articles from their dashboard.',
       image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['React', 'AI Integration', 'Supabase', 'TailwindCSS', 'SEO Optimization'],
+      liveUrl: 'https://kamal.cc',
+      githubUrl: '#'
+    },
+    {
+      title: 'VideoBite – Faceless Video Creator using AI (In Progress)',
+      description: 'AI-powered tool to create YouTube shorts, reels, and other faceless videos using AI-generated scripts, voiceovers, and automated editing. Integrates OpenAI API for scriptwriting, Text-to-Speech engines for voice generation, and FFmpeg for video compilation. Designed to help content creators produce scalable video content without appearing on camera.',
+      image: 'https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['OpenAI API', 'Text-to-Speech', 'FFmpeg', 'Video Automation', 'Content Creation'],
       liveUrl: '#',
       githubUrl: '#'
     },
