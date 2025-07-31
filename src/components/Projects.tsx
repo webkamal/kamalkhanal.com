@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
       githubUrl: '#'
     },
     {
-      title: 'Faceless AI',
+      title: 'Faceless AI - Viral Video Creator',
       description: 'AI-powered platform designed to automate the creation of viral faceless videos. It generates engaging scripts from user topics, integrates AI voiceovers, selects relevant stock footage, and applies dynamic text overlays, all optimized for various social media platforms like YouTube, TikTok, and Instagram.',
       image: 'https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['OpenAI API', 'Text-to-Speech', 'FFmpeg', 'Video Automation', 'Content Creation'],
