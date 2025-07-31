@@ -31,11 +31,11 @@ const Projects: React.FC = () => {
       githubUrl: '#'
     },
     {
-      title: 'DevStore - Headless E-commerce Storefront',
+      title: 'NextStore - Headless E-commerce Storefront',
       description: 'Developed modern storefront with custom cart, checkout, and CMS integration. Consumed Medusa Commerce API for product inventory, payments, and orders. Optimized for Core Web Vitals and implemented product filters and reviews.',
       image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['Next.js', 'Medusa', 'TailwindCSS', 'Core Web Vitals', 'E-commerce'],
-      liveUrl: '#',
+      liveUrl: 'https://nextstore.com.au',
       githubUrl: '#'
     }
   ];
